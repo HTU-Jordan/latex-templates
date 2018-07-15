@@ -1,0 +1,147 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Settings - DO NOT CHANGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+%\usepackage{fontspec}
+\graphicspath{{assets/}}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fontspec}
+\usepackage{blindtext}
+\setmainfont{ScalaSansPro-Regular.otf}[
+BoldFont = ScalaSansPro-Bold.otf,
+ItalicFont = ScalaSansPro-Italic.otf,
+BoldItalicFont  = ScalaSansPro-BoldItalic.otf]
+\usepackage{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\usepackage{subfig}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{lblue}{RGB}{127, 197, 220}
+\definecolor{lred}{RGB}{249, 3, 36}
+\definecolor{lgray}{rgb}{0.9,0.9,0.9}
+
+\lstset{frame=tb,
+  language=Python, % Change this if you want to include code other than Python globally
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{red},
+  keywordstyle=\color{lblue},
+  commentstyle=\color{gray},
+  stringstyle=\color{lred},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3}
+\usepackage[table]{xcolor}
+\usepackage{array}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\vspace*{-4\baselineskip}
+\begin{figure}[h!]
+	\hspace{65pt}
+	\includegraphics[width=0.3\linewidth]{logo}
+	\vspace*{-11\baselineskip}
+\end{figure}
+
+\begin{center}
+    \vspace*{2.25\baselineskip}
+    \hspace*{190pt}
+    \large\textbf{Paper }\text{Computer Science 101} \\ % Put Paper Name Here
+    \hspace*{225pt}
+    \large\textbf{Topic }\text{CUDA/C++ Coding Principles} \\ % Put Assignment Topic/Name Here
+    \hspace*{180pt}
+    \large\textbf{Lecturer(s) }\text{Lecturer Name} \\ % Lecturer Name
+   	\hspace*{165pt}
+    \large\textbf{Due }\text{3:00pm 29/1/1992} \\ % Due time/date
+\end{center}
+\vspace*{2\baselineskip}
+\par\noindent\rule{\textwidth}{0.01pt}
+
+% DO NOT MODIFY
+\begin{center}
+	\vspace*{1\baselineskip}
+	\textbf{Name } \rule{132pt}{0.1pt} \\
+	\vspace*{1\baselineskip}
+	\textbf{Student ID } \rule{112pt}{0.1pt} \\
+	\vspace*{1\baselineskip}
+
+\par\noindent\rule{\textwidth}{0.01pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can modify the instructions here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{1.5\baselineskip}
+\centering\large\textbf{Instructions}
+
+\vspace*{1\baselineskip}
+\hspace*{225pt}
+\begin{enumerate}
+	\item Read all the questions carefully.
+	\item Solve all the questions.
+	\item Submit assignment.
+    \item 
+    \item
+\end{enumerate}
+\par\noindent\rule{\textwidth}{0.01pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can modify the grading here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{1.5\baselineskip}
+%\centering\large\textbf{Grading Section}
+
+%\vspace*{1\baselineskip}
+%{0, 140, 186}
+\setlength{\tabcolsep}{18pt}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+%\rowcolors{2}{lblue}{lgray}
+
+\begin{tabular}{|M{2cm}|M{2cm}|M{2cm}|N}
+ 	\hline
+ 	%\cellcolor[HTML]{7FC5DC}\textbf{Question} & 
+    %\cellcolor[HTML]{7FC5DC}\textbf{Grade} & 
+    %\cellcolor[HTML]{7FC5DC}\textbf{Score} &\\[10pt] \hline
+    \cellcolor[HTML]{7FC5DC}\textbf{Question} & \cellcolor[HTML]{7FC5DC}\textbf{Grade} & \cellcolor[HTML]{7FC5DC}\textbf{Score} &\\[10pt] \hline
+    Q.1 & 10 &  &\\ [7pt] \hline
+ 	Q.2 & 10 &  &\\ [7pt] \hline
+ 	Q.3 & 10 &  &\\ [7pt] \hline
+ 	Q.4 & 10 &  &\\ [7pt] \hline
+ 	Q.5 & 10 &  &\\ [7pt] \hline
+ 	Q.6 & 10 &  &\\ [7pt] \hline
+ 	Q.7 & 10 &  &\\ [7pt] \hline
+ 	Q.8 & 10 &  &\\ [7pt] \hline
+    Q.9 & 10 &  &\\ [7pt] \hline
+ 	Q.10 & 10 &  &\\ [7pt] \hline
+    \cellcolor[HTML]{7FC5DC}\textbf{Total} & \cellcolor[HTML]{7FC5DC}\textbf{100} & \cellcolor[HTML]{7FC5DC} &\\[10pt] \hline
+    
+\end{tabular}
+
+\end{center}
+%\vspace*{1\baselineskip}
+%\par\noindent\rule{\textwidth}{0.01pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First Page of Assignment
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Create sections and pages like such:
+\newpage
+\section*{Question 1}
+
+  
+\end{document}
